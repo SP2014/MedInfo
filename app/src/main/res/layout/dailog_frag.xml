@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxHeight="600dp">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ebebeb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="8dp"
+        android:background="@color/amber"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/presDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="29-Sep-2016"
+            android:layout_marginLeft="8dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/disName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Disease Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Prescriptions"
+            android:textSize="18sp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/presDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Prescription1"
+            android:textSize="16sp"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/presDoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Prescribed By"
+            android:textSize="18sp"
+            android:textColor="@color/indigo"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

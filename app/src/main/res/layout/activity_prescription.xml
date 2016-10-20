@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_prescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.starsoft.medinfo.PrescriptionActivity"
+    android:background="#e3e3e3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/prescriptionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prescription Date"
+            android:maxLines="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            />
+
+
+        <EditText
+            android:id="@+id/diseaseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Disease Name"
+            android:maxLines="2"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            />
+
+        <EditText
+            android:id="@+id/prescriptionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Description"
+            android:minLines="4"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:gravity="start"
+            />
+
+        <EditText
+            android:id="@+id/doctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor Name"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_marginTop="16dp"
+            android:text="Save"
+            android:background="@color/colorAccent"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

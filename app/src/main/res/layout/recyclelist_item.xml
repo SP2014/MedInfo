@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="108dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/cardview_light_background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:elevation="2dp"
+                android:background="@color/cardview_shadow_end_color"
+                tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_margin="8dp"
+                android:contentDescription="Date"
+                android:gravity="center"
+                android:background="@drawable/path14"
+                tools:ignore="HardcodedText">
+
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/cardview_light_background"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#56b48c"
+                    android:padding="8dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="October"
+                        android:textSize="10sp"
+                        android:textColor="@color/cardview_light_background"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ebebeb"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textDisease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disease Name"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textDoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDisease"
+                    android:text="Prescribed By: "
+                    android:textSize="14sp"
+                    android:textColor="@color/common_google_signin_btn_text_light"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginTop="4dp"
+                    tools:ignore="HardcodedText" />
+
+
+                <ImageButton
+                    android:id="@+id/btnDel"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="-8dp"
+                    android:layout_marginRight="-8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete_grey_600_18dp"
+                    android:padding="6dp"
+                    />
+
+                <!--LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btnShare"
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_share_grey_600_18dp"
+                        android:contentDescription="Share"
+                        android:clickable="true"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/btnDelete"
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_delete_grey_600_18dp"
+                        android:contentDescription="Delete"
+                        android:clickable="true"
+                        />
+
+                </LinearLayout-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
