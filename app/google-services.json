@@ -15,13 +15,21 @@
       },
       "oauth_client": [
         {
+          "client_id": "356825061004-0k0gv4447pp66itmeqp658nvdiel0hr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.starsoft.medinfo",
+            "certificate_hash": "9E308EB4E8692BDEEA494FD1C2092DD7EE985FEB"
+          }
+        },
+        {
           "client_id": "356825061004-i23568f16rrqkdpl6d3t5q2n2b46umrn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDpepqu2wYrHmV4DMFUFNF1TnOOfYxpnfU"
+          "current_key": "AIzaSyC4lKymfIHAWtwIAUPCrzAmYwNOX1P944A"
         }
       ],
       "services": {

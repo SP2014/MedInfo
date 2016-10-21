@@ -161,7 +161,7 @@ public class NearbyActivity extends AppCompatActivity implements GoogleMap.OnMyL
         googlePlacesUrl.append("&radius=" + PROXIMITY_RADIUS);
         googlePlacesUrl.append("&type=" + nearbyPlace);
         googlePlacesUrl.append("&sensor=true");
-        googlePlacesUrl.append("&key=" + "AIzaSyB0_CiO0E3fFnNiY-OLrVOm_h2qAj8F5kQ");
+        googlePlacesUrl.append("&key=" + "AIzaSyD11b8T5e8ATvebAntxEq1cOkY_LMbA1Dc");
         Log.d("getUrl", googlePlacesUrl.toString());
         return (googlePlacesUrl.toString());
     }

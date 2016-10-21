@@ -75,6 +75,8 @@ public class LoginActivity extends AppCompatActivity {
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
 
+        mProgressView = findViewById(R.id.login_progress);
+
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -108,14 +110,10 @@ public class LoginActivity extends AppCompatActivity {
                     firebaseAuth.signInWithEmailAndPassword(uemail,upwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            final ProgressDialog progressDialog = new ProgressDialog(getApplicationContext());
-                            progressDialog.setMessage("Authenticating user....");
-                            progressDialog.setIndeterminate(true);
-                            progressDialog.setCancelable(false);
-                            progressDialog.show();
+                            mProgressView.setVisibility(View.VISIBLE);
 
                           if(task.isSuccessful()){
-                              progressDialog.dismiss();
+                              mProgressView.setVisibility(View.GONE);
                               editor.putBoolean("showLogin",false);
                               editor.commit();
                               startActivity(new Intent(getApplicationContext(),MainActivity.class));
@@ -140,12 +138,8 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         mLoginFormView = findViewById(R.id.login_form);
-        mProgressView = findViewById(R.id.login_progress);
+
     }
-
-
-
-
 
 
 
